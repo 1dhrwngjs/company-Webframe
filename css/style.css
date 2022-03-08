@@ -7,24 +7,31 @@ body {
 a {
   display: block;
   text-decoration: none; /* link underline delete */
-  color: #8492a6;
+  color: #fff;
   font-size: 20px;
 }
 
-#first-screen {
-  height: 1080px;
-
+/* ID, screen */
+#first-section,
+#second-section,
+#third-section {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* 1st section */
+#first-section {
+  height: 1080px;
 
   background-image: url(../img/main-wallpaper.jpg);
   background-size: cover;
   background-position: center center;
   background-color: rgba(0, 0, 0, 0.25);
 }
-#first-screen a {
+#first-section > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,36 +42,25 @@ a {
   border: 2px none rgba(255, 255, 255, 0.5);
   border-radius: 15px;
 
+  text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255, 0.8);
+
   background-color: rgba(0, 0, 0, 0.5);
 }
-#first-screen-explain {
-  margin-bottom: 65px;
 
-  text-align: center;
-
-  color: rgba(245, 245, 245, 0.5);
-}
-#first-screen-explain strong {
-  display: block;
-
-  margin-bottom: 10px;
-
-  font-size: 50px;
-
-  color: wheat;
-}
-
-#second-screen {
+/* 2st section */
+#second-section {
   background-color: rgb(236, 232, 220);
 }
 
-#third-screen {
+/* 3st section */
+#third-section {
   height: 450px;
   background-color: rgb(238, 237, 233);
 }
 
+/* main */
 .nav-main,
 .visual,
 .last-main {
@@ -75,6 +71,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
   height: 150px;
 }
@@ -133,4 +131,103 @@ a {
 .gnb-right a {
   margin-left: 10px;
   text-align: right;
+}
+
+/* Class, screen */
+
+/* 1st section */
+.screen-one-explain {
+  margin-bottom: 65px;
+
+  text-align: center;
+
+  color: rgba(245, 245, 245, 0.5);
+}
+.screen-one-explain strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 50px;
+
+  color: wheat;
+}
+
+/* 2st section */
+.screen-two-header,
+.screen-two-content,
+.screen-two-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen-two-header {
+  height: 20%;
+}
+.screen-two-content {
+  height: 60%;
+
+  justify-content: space-around;
+}
+.screen-two-btn {
+  height: 20%;
+}
+
+/* 2st section - screen-two-header 부분 */
+.screen-two-header h1 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+}
+
+/* 2st section - screen-two-content 부분 */
+.two-content-item {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-card {
+  border: 2px solid rgba(128, 128, 128, 0.25);
+  border-radius: 15px;
+
+  background-color: rgba(255, 255, 255, 0.25);
+
+  overflow: hidden;
+}
+.item-card-picture {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+.item-detail {
+  text-align: center;
+}
+.item-detail dt {
+  margin: 20px;
+  font-size: 32px;
+}
+
+/* 2st section - screen-two-btn 부분 */
+.screen-two-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 50px;
+
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 0, 0.8);
+
+  background-color: rgba(255, 255, 255, 0.25);
 }
