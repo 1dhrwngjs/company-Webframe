@@ -1,0 +1,96 @@
+@import "./reset.css";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.nav-main,
+.visual-main,
+.last-main {
+  width: 100%;
+}
+
+.nav-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 200px;
+}
+
+.visual-main {
+  height: 1080px;
+
+  background-image: url(../img/main-wallpaper.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.last-main {
+  height: 300px;
+
+  background-color: wheat;
+}
+
+/* nav-main */
+.nav-main-gnb,
+.gnb,
+.gnb-left,
+.gnb-mid,
+.gnb-right {
+  width: 100%;
+  height: 100%;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* 기본값이더라도 세팅 */
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.gnb-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb-mid {
+  width: auto;
+  height: auto;
+
+  overflow: hidden;
+}
+
+.gnb-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* gnb-items tag settings */
+.gnb-mid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* a tag */
+.gnb-left a,
+.gnb-right a {
+  display: block;
+  color: #8492a6;
+  font-size: 20px;
+  text-decoration: none; /* link underline delete */
+}
+.gnb-left a {
+  text-align: left;
+}
+.gnb-right a {
+  margin-left: 10px;
+  text-align: right;
+}
