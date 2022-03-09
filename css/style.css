@@ -79,6 +79,11 @@ a {
   height: 800px;
 }
 .last-main {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   height: 100px;
 
   background-color: wheat;
@@ -103,6 +108,7 @@ a {
   flex-direction: row;
 }
 .gnb-left {
+  margin-left: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,8 +120,10 @@ a {
   overflow: hidden;
 }
 .gnb-right {
+  margin-right: 50px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
   align-items: center;
 }
 /* gnb-items tag settings */
@@ -248,4 +256,9 @@ a {
 }
 .imgTransform {
   transform: scale(-1);
+}
+
+/* last-main 부분 */
+.last-main span {
+  text-align: center;
 }
